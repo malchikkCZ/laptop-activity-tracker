@@ -3,16 +3,14 @@ import requests
 from datetime import datetime
 from requests.exceptions import HTTPError
 
-from account import ACCOUNT
-
 API = "https://pixe.la/v1/users/"
 INTERVAL = 5
 
-# ACCOUNT = {
-#     "token": <yourTokenAsString>,
-#     "username": <yourUsernameAsString>,
-#     "graph": "howlongitran",
-# }
+ACCOUNT = {
+    "token": <yourTokenAsString>,           # change this line to your own token
+    "username": <yourUsernameAsString>,     # change this line to your own username
+    "graph": "howlongitran",
+}
 
 now = str(datetime.now())
 log = {now: {}}
